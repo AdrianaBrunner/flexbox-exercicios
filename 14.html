@@ -12,10 +12,19 @@
     .flex-container {
         display: flex;
         height: 80vh;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+    @media (max-width: 1280px) {
+        .flex-container div {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .flex-container div {
+        flex-basis: 40%;
     }
 </style>
 
